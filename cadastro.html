@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - FinUp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <header>
+    <header>
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo FinUp">
+    </a>
+
+    
+</header>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <!-- SOBRE -->
+
+            <li>
+
+                <a href="#" id="btn-sobre">
+                    Sobre
+                </a>
+
+                <ul id="menu-vertical-sobre" class="menu-vertical">
+
+                    <li>
+                        <a href="empresa.html">
+                            Empresa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="clientes.html">
+                            Clientes
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- CONTATO -->
+
+            <li>
+
+                <a href="#" id="btn-contato">
+                    Contato
+                </a>
+
+                <ul id="menu-vertical-contato" class="menu-vertical">
+
+                    <li>
+                        <a href="tel:+5532999999999">
+                            Telefones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:contato@finup.com">
+                            Email
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </nav>
+  </header>
+
+
+    <main>
+
+    <h1>Crie sua conta</h1>
+
+    <p>Cadastre-se na FinUp e comece a organizar sua vida financeira.</p>
+
+    <form id="formCadastro" class="formulario">
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome:">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu E-mail:" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" placeholder="Digite seu cpf:" 
+        maxlength="11"
+        inputmode="numeric"
+        oniput="this.value = this.value.replace(/[^0-9]/g, '')"
+        required>
+
+        <label for="endereco">Endereço:</label><input type="text" id="endereco" placeholder="Digite seu endereço:"required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone:" 
+        maxlength="11"
+        inputmode="numeric"
+        oniput="this.value = this.value.replace(/[^0-9]/g, '')"
+        required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha:" required>
+
+        <label for="confirmarSenha">Confirmar senha:</label>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha:" required>
+
+        <button type="submit">Cadastrar</button>
+
+        <a href="index.html" class="botao-voltar">
+           Voltar
+        </a>
+
+<p id="mensagem"></p>
+
+
+
+    </form>
+
+</main>
+
+<footer>
+
+    <p>Data: <span id="data"></span></p>
+
+    <p>Todos os direitos reservados.</p>
+
+    <p>
+        Desenvolvido por: Sarah Resende 
+    </p>
+
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

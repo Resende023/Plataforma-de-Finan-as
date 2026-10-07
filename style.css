@@ -1,0 +1,334 @@
+header {
+    background: #0b3d2e;
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 10px
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4ade80;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background: #0b5941;
+    padding: 20px;
+}
+
+.menu-vertical.active {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: url("finup.jpg") center/cover no-repeat;
+    color: white;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 20px 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background: #0b3d2e;
+    padding: 18px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+    color: white;
+}
+
+footer p:first-child {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: rgba(7, 7, 7, 0.45);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.45);
+}
+
+.formulario label {
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.formulario input,
+#controle input,
+#controle select {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.formulario input:focus {
+    outline: none;
+    border: 2px solid #d84c00;
+}
+
+.formulario button,
+#controle button {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    background: #16a05d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover,
+#controle button:hover,
+#btncadastro:hover,
+.botao-voltar:hover {
+    background: #0b3d2e;
+}
+
+.formulario #mensagem {
+    margin: 5px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.botao-voltar,
+#btncadastro {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 10px;
+    background: #16a05d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#btncadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controle {
+    background: #f4f7f6;
+    color: #0b3d2e;
+}
+
+#controle h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#controle .descricao {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#controle .resumo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#controle .card,
+#controle .movimentacao,
+#controle .historico {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#controle .card {
+    width: 250px;
+    padding: 25px;
+}
+
+#controle .card h2,
+#controle .movimentacao h2,
+#controle .historico h2 {
+    color: #0b3d2e;
+}
+
+#controle .card p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#controle .saldo p {
+    color: #0b3d2e;
+}
+
+#controle .receita p,
+#controle .movimento .receita {
+    color: #16a05d;
+}
+
+#controle .despesa p,
+#controle .movimento .despesa {
+    color: #d9534f;
+}
+
+#controle .movimentacao {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#controle form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+#controle label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#controle input,
+#controle select {
+    padding: 8px;
+}
+
+#controle .historico {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 40px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#controle .movimento {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#controle + footer {
+    background: #0b3d2e;
+    color: white;
+    padding: 25px;
+}
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 0;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding-left: 80px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 130px 15px 60px;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #controle .card {
+        width: 100%;
+    }
+
+    #controle .movimentacao,
+    #controle .historico {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+}
